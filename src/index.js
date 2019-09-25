@@ -4,7 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+let counts=0;
+
+setInterval( ()=> {
+    ReactDOM.render(counts, document.getElementById('root'));
+    counts++;
+    
+    let numero = counts;
+    numero.tostring();
+    if(numero.length > 1){
+
+    }
+},1000);
+
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
